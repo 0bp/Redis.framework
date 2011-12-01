@@ -5,7 +5,7 @@ p. for OS X 10.7
 p. Objective-C Wrapper around "Hiredis":http://github.com/antirez/hiredis
 A fork of "ObjCHiredis":http://github.com/lp/ObjCHiredis
 
-p. Creation of an autoreleased object is easy and comes in 3 flavours:
+p. Example
 
 bc. Redis * r = [[Redis alloc] initWithHost:@"127.0.0.1" password:nil port:6379 db:0];
 id result = [r command:@"KEYS *"];
@@ -14,8 +14,8 @@ id result = [r commandArgv:[NSArray arrayWithObjects:@"SET", @"MYKEY", @"MYVALUE
 
 p. Pub/Sub implementation
 
-bc. [redis command:@"SUBSCRIBE CHANNELZ"];
-retVal = [redis getReply];
+bc. [r command:@"SUBSCRIBE CHANNELZ"];
+retVal = [r getReply];
 // Will block until it receives data from a a PUBLISH CHANNELZ.
 
 h2. Licenses
