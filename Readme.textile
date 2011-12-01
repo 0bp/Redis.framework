@@ -1,7 +1,7 @@
 h1. Redis.framework (for OS X 10.7)
 
 h3. Objective-C Wrapper around "Hiredis":http://github.com/antirez/hiredis
-h3. A fork of "ObjCHiredis":https://github.com/lp/ObjCHiredis
+A fork of "ObjCHiredis":https://github.com/lp/ObjCHiredis
 
 p. Creation of an autoreleased object is easy and comes in 3 flavours:
 
